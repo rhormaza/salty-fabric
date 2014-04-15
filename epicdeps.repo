@@ -1,0 +1,7 @@
+[custom-epic-repo]
+name=Dependencies for Salt, Zenoss, etc
+baseurl=http://salt/repos
+failovermethod=priority
+enabled=1
+gpgcheck=0
+proxy=_none_

@@ -1,0 +1,22 @@
+# TODO(raul): this need more info!
+#README
+
+This fabric script is used to bootstrap salt in a new server.
+
+## Usage
+
+* Ensure there is at least *one* user with sudo rights in the system, as some
+  admin tasks need to performed. ``root`` user can be also used.
+
+* Run the fabric script using by typing:
+
+** ```fab -H TARGET_IP_OR_HOSTNAME -f FABFILE.py -u USER TASK:ARGS
+
+Examples:
+  
+**  ```fab -H 10.188.49.28 -f fab_bootstrap.py -u admin check_minion_status```
+
+or 
+
+**  ```fab -H foo.my.domaim -f fab_bootstrap.py -u admin install_minion:foo.mydomain,repos=epicdeps.repo```
+
